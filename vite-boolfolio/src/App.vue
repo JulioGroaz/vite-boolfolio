@@ -1,26 +1,28 @@
-<script setup>
-import HelloWorld from './components/HelloWorld.vue'
-import TheWelcome from './components/TheWelcome.vue'
+<script >
+  import MainHeader from './components/MainHeader.vue';
+  import MainMain from './components/MainMain.vue';
+  import MainFooter from './components/MainFooter.vue';
+
+  export default {
+    name:"",
+    components:{
+       MainHeader,
+       MainMain,
+       MainFooter
+    }
+}
 </script>
 
 <template>
-  <header>
-    <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
-
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
-    </div>
-  </header>
-
-  <main>
-    <TheWelcome />
-  </main>
+  <MainHeader/>
+  <MainMain/>
+  <MainFooter/>
 </template>
 
-<style scoped>
+<style lang="scss">
 header {
   line-height: 1.5;
-}
+} 
 
 .logo {
   display: block;
